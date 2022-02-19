@@ -1,0 +1,180 @@
+/* The styles for the elements */
+
+/*  Document   : Styling sheet
+    Created on : Feb 9, 2022, 1:37:48 PM
+    Author     : Maday Cohen
+*/
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 400px;
+}
+h1 {     
+    font-size: 140%;
+    color: teal;
+    margin-bottom: .5em;    
+}
+h2 {     
+    font-size: 120%;
+    color: teal;
+    margin-bottom: .5em;    
+}
+label {
+    float: left;
+    width: 7em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {  /* An attribute selector */
+    width: 15em;
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;
+}
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+}
+br {
+    clear: both;
+}
+
+/* The styles for the classes */
+.pad_top {
+    padding-top: 0.25em;
+}
+.margin_left {
+    margin-left: 0.5em;
+}
+
+/* Style for table on support page*/
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Table head Style*/
+.content-table thead tr {
+    background-color: #F5F5DC;
+    color: #000000;
+    text-align: Center;
+    font-weight: bold;
+    border: 1.5px solid beige
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1.5px solid #dddddd;
+}
+
+/*Rows effect in table*/
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #d5b895;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #a6745b;
+}
+
+/*Footer style*/
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #F5F5DC;
+    color: #000000;
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 0.7em;
+}
+
+/*Text selection on page*/
+::selection {
+    background: #faf0dc;
+}
+
+/* Heading Margins that are applied on about and support page */
+p.ex1{
+    margin: 35px 50px 30px 70px;
+
+}
+
+/* about section */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #F5F5DC;
+    color: solid black;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: solid black;
+    background-color: #F5F5DC;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
